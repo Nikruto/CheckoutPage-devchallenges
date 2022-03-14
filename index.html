@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout Page</title>
+
+    <link rel="stylesheet" href="./tailwind.css" />
+    <script defer src="index.js"></script>
+  </head>
+  <body class="font-sans font-semibold text-[#4E5150] preload">
+    <div class="container-fluid flex flex-col min-h-screen pt-8">
+      <h1 class="text-3xl">Checkout</h1>
+
+      <div class="flex flex-col md:flex-row gap-12 md:gap-24 mt-8">
+        <div class="flex-1 order-2 md:order-1">
+          <form>
+            <h2 class="text-gray-1">Contact information</h2>
+
+            <div class="mt-2 space-y-4">
+              <div>
+                <label class="text-sm">E-mail</label>
+                <div
+                  class="relative border border-gray-3 rounded-lg overflow-hidden py-3 px-3 mt-1 flex items-center group"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-7 w-7 mr-3 text-gray-3 group-focus-within:text-gray-1 transition"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                    />
+                    <path
+                      d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                    />
+                  </svg>
+                  <input
+                    type="email"
+                    required
+                    class="block w-full text-gray-1 placeholder:text-gray-3 outline-none"
+                    placeholder="Enter your email..."
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label class="text-sm">Phone</label>
+                <div
+                  class="relative border border-gray-3 rounded-lg overflow-hidden py-3 px-3 mt-1 flex items-center group"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-7 w-7 mr-3 text-gray-3 group-focus-within:text-gray-1 transition"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
+                    />
+                  </svg>
+                  <input
+                    type="tel"
+                    required
+                    class="block w-full text-gray-1 placeholder:text-gray-3 outline-none"
+                    placeholder="Enter your phone..."
+                  />
+                </div>
+              </div>
+            </div>
+
+            <h2 class="text-gray-1 mt-12">Shipping address</h2>
+
+            <div class="mt-2 space-y-4">
+              <div>
+                <label class="text-sm">Full name</label>
+                <div
+                  class="relative border border-gray-3 rounded-lg overflow-hidden py-3 px-3 mt-1 flex items-center group"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-7 w-7 mr-3 text-gray-3 group-focus-within:text-gray-1 transition"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+
+                  <input
+                    type="text"
+                    required
+                    class="block w-full text-gray-1 placeholder:text-gray-3 outline-none"
+                    placeholder="Your name.."
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label class="text-sm">Address</label>
+                <div
+                  class="relative border border-gray-3 rounded-lg overflow-hidden py-3 px-3 mt-1 flex items-center group"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-7 w-7 mr-3 text-gray-3 group-focus-within:text-gray-1 transition"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"
+                    />
+                  </svg>
+                  <input
+                    type="text"
+                    required
+                    class="block w-full text-gray-1 placeholder:text-gray-3 outline-none"
+                    placeholder="Your address.."
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label class="text-sm">City</label>
+                <div
+                  class="relative border border-gray-3 rounded-lg overflow-hidden py-3 px-3 mt-1 flex items-center group"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-7 w-7 mr-3 text-gray-3 group-focus-within:text-gray-1 transition"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <input
+                    type="text"
+                    required
+                    class="block w-full text-gray-1 placeholder:text-gray-3 outline-none"
+                    placeholder="Your city.."
+                  />
+                </div>
+              </div>
+
+              <div class="flex gap-6">
+                <div class="w-full">
+                  <label class="text-sm">Country</label>
+                  <div
+                    class="relative border border-gray-3 rounded-lg overflow-hidden py-3 px-3 mt-1 flex items-center group"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-7 w-7 mr-3 text-gray-3 group-focus-within:text-gray-1 transition"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    <select
+                      required
+                      class="block w-full text-gray-1 placeholder:text-gray-3 outline-none"
+                    >
+                      <option disabled selected value="">Your country..</option>
+                      <option value="de">Germany</option>
+                      <option value="tr">Turkey</option>
+                      <option value="usa">United States</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="w-full">
+                  <label class="text-sm">Postal code</label>
+                  <div
+                    class="relative border border-gray-3 rounded-lg overflow-hidden py-3 px-3 mt-1 flex items-center group"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-7 w-7 mr-3 text-gray-3 group-focus-within:text-gray-1 transition"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5 3a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2V5a2 2 0 00-2-2H5zm0 2h10v7h-2l-1 2H8l-1-2H5V5z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    <input
+                      type="text"
+                      required
+                      class="block w-full text-gray-1 placeholder:text-gray-3 outline-none"
+                      placeholder="Your postal code.."
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex space-x-2 items-center mt-4">
+              <label
+                class="relative block w-6 h-6 p-1 rounded border-2 border-gray-1 focus-within:border-orange transition"
+              >
+                <input type="checkbox" class="w-0 h-0 absolute peer" />
+                <div
+                  class="w-full h-full rounded-sm bg-orange hidden peer-checked:block"
+                ></div>
+              </label>
+              <p class="text-sm">Save this information for next time</p>
+            </div>
+            <div class="flex justify-end mt-4">
+              <button
+                type="submit"
+                class="bg-orange px-8 py-3 text-white rounded-lg"
+              >
+                Continue
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="flex-shrink-0 pt-4 order-1 md:order-2 w-full md:w-auto">
+          <div class="w-full md:w-80 bg-[#F2F2F2] p-6">
+            <div class="space-y-6">
+              <div class="flex space-x-4">
+                <img
+                  src="img/photo1.png"
+                  class="w-24 h-24 rounded-md object-center object-cover"
+                />
+                <div class="flex flex-col items-start">
+                  <p>Vintage Backbag</p>
+                  <div>
+                    <span class="text-orange">$54.99</span>
+                    <span class="line-through text-xs">$94.99</span>
+                  </div>
+                  <div
+                    class="border-2 border-gray-3 p-2 flex items-center space-x-6 mt-auto rounded-lg"
+                  >
+                    <button
+                      class="w-5 h-5 bg-[#E0E0E0] flex items-center justify-center text-xl rounded"
+                    >
+                      -
+                    </button>
+                    <span>1</span>
+                    <button
+                      class="w-5 h-5 bg-[#E0E0E0] flex items-center justify-center text-xl rounded"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex space-x-4">
+                <img
+                  src="img/photo2.png"
+                  class="w-24 h-24 rounded-md object-center object-cover"
+                />
+                <div class="flex flex-col items-start">
+                  <p>Levi Shoes</p>
+                  <div>
+                    <span class="text-orange">$74.99</span>
+                    <span class="line-through text-xs">$124.99</span>
+                  </div>
+                  <div
+                    class="border-2 border-gray-3 p-2 flex items-center space-x-6 mt-auto rounded-lg"
+                  >
+                    <button
+                      class="w-5 h-5 bg-[#E0E0E0] flex items-center justify-center text-xl rounded"
+                    >
+                      -
+                    </button>
+                    <span>1</span>
+                    <button
+                      class="w-5 h-5 bg-[#E0E0E0] flex items-center justify-center text-xl rounded"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-12">
+              <div class="w-full h-[2px] bg-gray-3 opacity-10"></div>
+              <div class="flex items-center justify-between text-sm py-1">
+                <p>Shipping</p>
+                <p>$19</p>
+              </div>
+              <div class="w-full h-[2px] bg-gray-3 opacity-10"></div>
+              <div class="flex items-center justify-between text-sm pt-1">
+                <p>Total</p>
+                <p>$148.98</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-auto p-4 text-[#BDBDBD]">
+        <a href="https://devchallenges.io/portfolio/Nikruto" target="_blank"
+          ><p class="mt-20 text-center">
+            created by <span class="underline">nikruto</span> - devChallenges.io
+          </p></a
+        >
+      </div>
+    </div>
+  </body>
+</html>
